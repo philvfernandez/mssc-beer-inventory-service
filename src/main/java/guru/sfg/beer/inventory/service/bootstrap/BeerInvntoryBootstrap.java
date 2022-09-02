@@ -2,6 +2,7 @@ package guru.sfg.beer.inventory.service.bootstrap;
 
 import guru.sfg.beer.inventory.service.domain.BeerInventory;
 import guru.sfg.beer.inventory.service.repositories.BeerInventoryRepository;
+import jdk.jfr.Enabled;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
@@ -14,7 +15,7 @@ import java.util.UUID;
  */
 @Slf4j
 @RequiredArgsConstructor
-@Component
+// @Component
 public class BeerInvntoryBootstrap implements CommandLineRunner {
     public static final String BEER_1_UPC = "0631234200036";
     public static final String BEER_2_UPC = "0631234300019";
